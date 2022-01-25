@@ -1,0 +1,39 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROG15.
+       
+       *> PROGRAMA PARA COMPARAR DOIS NUMEROS
+       
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  VALOR1 PIC 9(2).
+       01  VALOR2 PIC 9(2).
+       
+       PROCEDURE DIVISION.
+       PROGRAM-BEGIN.
+       
+       DISPLAY "----- ESSE PROGRAMA VERIFICA QUAL NUMERO EH MAIOR -----".
+       
+       PERFORM INFORMA-NUMEROS.
+       PERFORM TESTE-NUMEROS.
+       
+       DISPLAY " ----- FINAL DO PROGRAMA ----- ".
+             
+      PROGRAM-DONE.
+      STOP RUN.
+      
+      INFORMA-NUMEROS.
+           DISPLAY "INFORME O PRIMEIRO NUMERO".
+           ACCEPT VALOR1.
+           DISPLAY "INFORME O SEGUNDO NUMERO"
+           ACCEPT VALOR2.
+           
+      TESTE-NUMEROS.
+      IF VALOR1 > VALOR2
+      DISPLAY "O PRIMEIRO VALOR EH MAIOR"
+      ELSE 
+           IF VALOR2 > VALOR1
+           DISPLAY "O SEGUNDO VALOR EH MAIOR"
+           ELSE  
+               IF VALOR1 = VALOR2
+               DISPLAY "OS VALORES SAO IGUAIS".
