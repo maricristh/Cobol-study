@@ -1,0 +1,29 @@
+	*> comentario. 
+	*> programa para obter dois nums do usuarios e calcular a soma
+
+	IDENTIFICATION DIVISION.
+	PROGRAM-ID. PROG3.
+	ENVIRONMENT DIVISION.
+	DATA DIVISION.
+
+	WORKING-STORAGE SECTION.
+
+	01 PRIMEIRO-NUMERO PIC 9(2).
+	01 SEGUNDO-NUMERO PIC IS 99.
+	01 RESULTADO       PIC IS 999.
+	PROCEDURE DIVISION.
+	       
+	PROGRAM-BEGIN.
+	   DISPLAY "Hello to Cobol world, Mariane".
+	   DISPLAY "informe o primeiro numero: ".
+	   ACCEPT PRIMEIRO-NUMERO.
+
+	   DISPLAY "informe o segundo numero: ".
+	   ACCEPT SEGUNDO-NUMERO.
+
+	   COMPUTE RESULTADO = PRIMEIRO-NUMERO + SEGUNDO-NUMERO.
+
+	  DISPLAY "O resultado da soma eh: " RESULTADO.	
+	
+	PROGRAM-DONE.
+	   STOP RUN.

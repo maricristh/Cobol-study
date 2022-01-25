@@ -1,0 +1,31 @@
+	*> var tipo texto, exercicio.
+	IDENTIFICATION DIVISION.
+	PROGRAM-ID. PROG4.
+	ENVIRONMENT DIVISION.
+	DATA DIVISION.
+
+	WORKING-STORAGE SECTION.
+	
+	01 NOME PICTURE IS XXXXXXXXXX.
+	01 SOBRENOME PIC X(10).
+
+	PROCEDURE DIVISION.
+	PROGRAM-BEGIN.
+	    DISPLAY "Qual eh o seu nome?".
+	    ACCEPT NOME.
+
+	    DISPLAY "Qual eh o seu sobrenome?".
+	    ACCEPT SOBRENOME.
+
+	    DISPLAY "ola, " NOME.
+
+	    DISPLAY "Last name: " SOBRENOME.
+
+
+	    DISPLAY "Nome: " NOME SOBRENOME.
+
+	PROGRAM-DONE.
+	    STOP-RUN.
+
+
+	 

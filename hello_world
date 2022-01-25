@@ -1,0 +1,8 @@
+identification division. 
+program-id. ola. 
+environment division. 
+configuration section.
+procedure division. 
+display "Hoje começamos a aprender COBOL que alegria" 
+stop"". 
+stop run.
