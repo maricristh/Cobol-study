@@ -21,7 +21,7 @@
            
            CLOSE ARQUIVO-FUNCIONARIO.
        PROGRAM-DONE.
-           STOP RUN.
+          STOP RUN.
 
        LER-E-ESCREVER-REGISTRO.
            MOVE SPACE TO FUNCIONARIO-REGISTRO.
