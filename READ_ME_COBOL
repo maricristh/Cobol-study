@@ -1,0 +1,50 @@
+Para compilar um programa cobol: 
+cobc -free -x -o helloworld-exe helloworld
+
+Para executar um programe em cobol:
+./helloworld-exe
+
+- instruções tem que ser em maiscula.
+
+- estrutura do programa:
+
+	IDENTIFICATION DIVISION.
+		Contem informacoes sobre o programa, sobre o autor, data de criação etc
+	PROGRAM-ID. PROG1. 
+		- ID do programa - obrigatorio
+	ENVIRONMENT DIVISION.
+		- cada configuração de cada mainframe, de cada maquina vai nessa parte
+	DATA DIVISION.
+		- ONde ficam as variaveis do programa.
+	PROCEDURE DIVISION.
+		- Onde fica toda logica.
+	PROGRAM-BEGIN.
+	   DISPLAY "Hello to Cobol world, Mariane".
+	PROGRAM-DONE.
+		- instrucao quando o programa termina.
+
+-- VARIÁVEIS:
+
+01 PRIMEIRO-NUMERO PIC 9(2) - ESSE 9 REPRESENTA QUE A VARIAVEL É UM NUMERO, O (2) A QUANTIDADE DE CARACTERES ACEITAVEIS. SE FOSSE PIC 99 SERIA A MESMA COISA QUE PIC 9(2).
+
+TIPO TEXTO:
+
+---------------------------------------------------
+
+COMPUTE: REALIZA OP. ARITMETICA.
+ACCEPT: ACEITA O VALOR DADO DO USUARIO A VARIAVEL.
+MOVE: COMANDO PARA ATRIBUIR UM VALOR A UMA VARIAVEL.
+PERFORM: EXECUTA O PROGRAMA (prog9 como exemplo) - dá pra fazer PERFORM aninhados.
+
+---------------------------------------------------
+
+IF: CONDIÇÃO VERDADEIRO OU FALSO.
+
+É POSSIVEL FAZER RECORD ANINHADOS. MAS LEMBRAR QUE PRECISO MANTER OS NUMEROS EM HIERARQUIA.
+  05 ENDERECO
+	10 RUA
+	10 CEP
+	10 NUMERO
+	10 CIDADE
+  05 NOME ...
+
